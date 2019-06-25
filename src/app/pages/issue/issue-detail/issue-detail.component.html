@@ -1,0 +1,37 @@
+<div class="content-wrapper">
+  <form *ngIf="issueDetailForm" [formGroup]="issueDetailForm" (ngSubmit)="saveIssue()">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="form-group">
+          <label class="badge">Descrioption</label>
+          <input type="text" formControlName="description" class="form-control"/>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="badge">Issue Status</label>
+          <select formControlName="issueStatus" class="form-control">
+            <option *ngFor="let val of issueStatusOptions" [value]="val">{{val}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="badge">Issue Date</label>
+          <input type="date" formControlName="date" class="form-control"/>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <label class="badge"></label>
+          <input type="date" formControlName="date" class="form-control"/>
+        </div>
+      </div>
+      .col-md-4>div.form-group>label.
+    </div>
+  </form>
+</div>
